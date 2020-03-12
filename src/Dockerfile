@@ -9,4 +9,4 @@ RUN apt-get remove gnupg wget -y --purge
 RUN apt autoremove -y
 RUN apt-get clean
 RUN rm -rf /var/cache/apt
-ENTRYPOINT ["cf", "version"]
+ENTRYPOINT ["sh"]
